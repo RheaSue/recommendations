@@ -1,0 +1,5 @@
+.text-header-large {
+    font-size: large;
+    font-weight: bold;
+    color: var(--theme-gray-color);
+}

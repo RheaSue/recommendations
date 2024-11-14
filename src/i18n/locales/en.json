@@ -1,0 +1,301 @@
+{
+    "title_summary": "What Happened?",
+    "title_recommendations": "Recommendations:",
+    "button_reboot": "Reboot",
+
+    "AP_BB_DOWN_2": {
+        "title_head": "Broadband<br />Connectivity",
+        "Reboot": "Reboot",
+        "summary": {
+            "title": "What Happened?",
+            "description": "Your network has detected DNS (Domain Name System) resolution errors. This means that your device is having trouble translating domain names (like www.example.com) into IP addresses, which can prevent you from accessing websites and online services.",
+            "category": "BROADBAND_CONNECTIVITY"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Restart Your Router: ",
+                "text": "Unplug your router, wait for 30 seconds, and plug it back in. This can often resolve DNS issues."
+            },
+            {
+                "id": "2",
+                "key_text": "Check DNS Settings: ",
+                "text": "Ensure your device is set to use a reliable DNS server. You can use public DNS servers like Google DNS (8.8.8.8, 8.8.4.4) or Cloudflare DNS (1.1.1.1)."
+            },
+            {
+                "id": "3",
+                "key_text": "Clear DNS Cache: ",
+                "text": "On your computer, you can clear the DNS cache to remove outdated or corrupted entries. For Windows, open Command Prompt and type <1>ipconfig /flushdns</1>. For macOS, open Terminal and type <1>sudo killall -HUP mDNSResponder</1>."
+            },
+            {
+                "id": "4",
+                "key_text": "Update Firmware: ",
+                "text": "Make sure your router's firmware is up to date."
+            },
+            {
+                "id": "5",
+                "key_text": "Check Network Configuration: ",
+                "text": "Ensure there are no conflicting IP addresses or network settings."
+            },
+            {
+                "id": "6",
+                "key_text": "Contact Your ISP: ",
+                "text": "If the problem persists, contact your Internet Service Provider to check for any issues on their end."
+            }
+        ]
+    },
+
+    "AP_BB_LAT_1": {
+        "title_head": "Broadband<br />Latency",
+        "summary": {
+            "title": "What Happened?",
+            "description": "Your broadband connection has been experiencing high latency, which can negatively impact interactive applications such as VoIP (Voice over Internet Protocol) and online gaming. High latency means there is a delay in data transmission, causing lag and poor performance.",
+            "category": "BROADBAND_LATENCY"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Check Your Connection: ",
+                "text": "Ensure all cables are securely connected and there are no visible damages."
+            },
+            {
+                "id": "2",
+                "key_text": "Restart Your Router: ",
+                "text": "Sometimes, a simple reboot can resolve latency issues. Unplug your router, wait for 30 seconds, and plug it back in."
+            },
+            {
+                "id": "3",
+                "key_text": "Close Unnecessary Applications: ",
+                "text": "Shut down any applications or devices that might be using a lot of bandwidth."
+            },
+            {
+                "id": "4",
+                "key_text": "Update Firmware: ",
+                "text": "Make sure your router's firmware is up to date."
+            },
+            {
+                "id": "5",
+                "key_text": "Optimize Router Placement: ",
+                "text": "Place your router in a central location, away from walls and other obstructions."
+            },
+            {
+                "id": "6",
+                "key_text": "Use Wired Connections: ",
+                "text": "For critical applications like gaming or VoIP, use a wired Ethernet connection instead of Wi-Fi."
+            },
+            {
+                "id": "7",
+                "key_text": "Contact Your ISP: ",
+                "text": "If the problem persists, contact your Internet Service Provider to check for any issues on their end or to upgrade your plan."
+            }
+        ]
+    },
+
+    "AP_CPU_1": {
+        "title_head": "AP Health",
+        "summary": {
+            "title": "What Happened?",
+            "description": "Your router has detected high CPU load recently. This can lead to slow performance, connectivity issues, and potential overheating.",
+            "category": "AP_HEALTH"
+        },
+        "conclusion": "If the issue persists, please contact your Internet Service Provider (ISP) or the router manufacturer for further assistance.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Restart Your Router: ",
+                "text": "Unplug your router, wait for 30 seconds, and plug it back in. This can help reset the CPU usage."
+            },
+            {
+                "id": "2",
+                "key_text": "Update Firmware: ",
+                "text": "Ensure your router's firmware is up to date. Firmware updates can optimize CPU usage and fix bugs."
+            },
+            {
+                "id": "3",
+                "key_text": "Limit Connected Devices: ",
+                "text": "Reduce the number of devices connected to your router to lower the CPU load."
+            },
+            {
+                "id": "4",
+                "key_text": "Close Unnecessary Applications: ",
+                "text": "Shut down any applications or services that might be using a lot of bandwidth and CPU resources."
+            },
+            {
+                "id": "5",
+                "key_text": "Check for Malware: ",
+                "text": "Ensure your network is secure and free from malware that could be causing high CPU usage."
+            },
+            {
+                "id": "6",
+                "key_text": "Factory Reset: ",
+                "text": "If the problem persists, consider performing a factory reset on your router. Note that this will erase all settings, so you will need to reconfigure your network."
+            },
+            {
+                "id": "7",
+                "key_text": "Upgrade Hardware: ",
+                "text": "If your router is old or frequently runs into high CPU load issues, consider upgrading to a newer model with a more powerful CPU."
+            },
+            {
+                "id": "8",
+                "key_text": "Contact Support: ",
+                "text": "If the issue continues, contact your Internet Service Provider or the router manufacturer for further assistance."
+            }
+        ]
+    },
+
+    "AP_MEM_1": {
+        "title_head": "AP Health",
+        "summary": {
+            "title": "What Happened?",
+            "description": "Your router has detected low-memory issues recently. This can lead to slow performance, frequent reboots, and connectivity problems.",
+            "category": "AP_HEALTH"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Restart Your Router: ",
+                "text": "Unplug your router, wait for 30 seconds, and plug it back in. This can free up memory and improve performance."
+            },
+            {
+                "id": "2",
+                "key_text": "Update Firmware: ",
+                "text": "Ensure your router's firmware is up to date. Firmware updates can optimize memory usage and fix bugs."
+            },
+            {
+                "id": "3",
+                "key_text": "Limit Connected Devices: ",
+                "text": "Reduce the number of devices connected to your router to free up memory."
+            },
+            {
+                "id": "4",
+                "key_text": "Close Unnecessary Applications: ",
+                "text": "Shut down any applications or services that might be using a lot of bandwidth and memory."
+            },
+            {
+                "id": "5",
+                "key_text": "Factory Reset: ",
+                "text": "If the problem persists, consider performing a factory reset on your router. Note that this will erase all settings, so you will need to reconfigure your network."
+            },
+            {
+                "id": "6",
+                "key_text": "Upgrade Hardware: ",
+                "text": "If your router is old or frequently runs into memory issues, consider upgrading to a newer model with more memory."
+            },
+            {
+                "id": "7",
+                "key_text": "Contact Support: ",
+                "text": "If the issue continues, contact your Internet Service Provider or the router manufacturer for further assistance."
+            }
+        ]
+    },
+
+    "AP_PWR_1": {
+        "title_head": "AP Health",
+        "summary": {
+            "description": "Your router has rebooted multiple times recently.",
+            "category": "AP_HEALTH"
+        },
+        "conclusion": "If the issue persists, please contact your Internet Service Provider (ISP) or the router manufacturer for further assistance.",
+        "recommendations_description": "If it is caused by your manual restart or abnormal power supply, you can ignore this message.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Check Power Supply: ",
+                "text": "Ensure your router is connected to a stable power source. Avoid using power strips or extension cords if possible."
+            },
+            {
+                "id": "2",
+                "key_text": "Update Firmware: ",
+                "text": "Check if there are any pending firmware updates for your router and install them."
+            },
+            {
+                "id": "3",
+                "key_text": "Improve Ventilation: ",
+                "text": "Make sure your router is placed in a well-ventilated area to prevent overheating."
+            },
+            {
+                "id": "4",
+                "key_text": "Inspect Hardware: ",
+                "text": "Look for any visible damage or loose connections. If the router is old, consider replacing it."
+            }
+        ]
+    },
+
+    "INTF_NOI_1": {
+        "title_head": "Wi-Fi Noise<br />Interference",
+        "summary": {
+            "title": "What Happened?",
+            "description": "Your Wi-Fi network named <1>{{networkName}}</1> has detected severe interference. This can cause slow speeds, dropped connections, and poor performance.",
+            "category": "WIFI_NOISE_INTERFERENCE"
+        },
+        "conclusion": "If the issue persists, please contact your Internet Service Provider (ISP) or the router manufacturer for further assistance.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Change Wi-Fi Channel: ",
+                "text": "Access your router's settings and change the Wi-Fi channel to one with less interference. Channels 1, 6, and 11 are often recommended for 2.4 GHz networks, while 5 GHz networks have more channels to choose from."
+            },
+            {
+                "id": "2",
+                "key_text": "Move Router: ",
+                "text": "Place your router in a central location, away from walls, metal objects, and other electronic devices that can cause interference."
+            },
+            {
+                "id": "3",
+                "key_text": "Reduce Interference Sources: ",
+                "text": "Keep devices like microwaves, cordless phones, and baby monitors away from your router as they can cause interference."
+            },
+            {
+                "id": "4",
+                "key_text": "Update Firmware: ",
+                "text": "Ensure your router's firmware is up to date to improve performance and reduce interference."
+            },
+            {
+                "id": "5",
+                "key_text": "Use Wired Connections: ",
+                "text": "For critical applications, consider using a wired Ethernet connection instead of Wi-Fi."
+            },
+            {
+                "id": "6",
+                "key_text": "Contact Support: ",
+                "text": "If the problem persists, contact your Internet Service Provider or the router manufacturer for further assistance."
+            }
+        ]
+    },
+
+    "INTF_SET_3": {
+        "title_head": "Wi-Fi Settings",
+        "summary": {
+            "title": "What Happened?",
+            "description": "The Wi-Fi network named <1>{{networkName}}</1> has its security settings open or disabled. This means that the network is not protected by a password, making it vulnerable to unauthorized access and potential security threats.",
+            "category": "WIFI_NOISE_INTERFERENCE"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Enable Wi-Fi Security: ",
+                "text": "Access your router's settings and enable WPA3 or WPA2 security. This will require users to enter a password to connect to your network."
+            },
+            {
+                "id": "2",
+                "key_text": "Set a Strong Password: ",
+                "text": "Choose a strong, unique password for your Wi-Fi network. Avoid using easily guessable passwords like \"password\" or \"12345678\"."
+            },
+            {
+                "id": "3",
+                "key_text": "Update Firmware: ",
+                "text": "Ensure your router's firmware is up to date to protect against known vulnerabilities."
+            },
+            {
+                "id": "4",
+                "key_text": "Monitor Connected Devices: ",
+                "text": "Regularly check the list of devices connected to your network to ensure there are no unauthorized users."
+            },
+            {
+                "id": "5",
+                "key_text": "Contact Support: ",
+                "text": "If you're unsure how to change these settings, refer to your router's manual or contact your ISP support team for assistance."
+            }
+        ]
+    }
+}

@@ -1,0 +1,47 @@
+
+.title_padding-bottom {
+    padding-bottom: clamp(1rem, 100vw / 38, 2rem);
+}
+
+.component__content-p-padding-bottom {
+    padding-top: clamp(1rem, 100vw / 38, 2rem);
+}
+
+.issue_image {
+    width: 100%;
+    padding-top: clamp(3rem, 100vw / 12.65, 6rem);
+    padding-bottom: clamp(4rem, 100vw / 9.5, 8rem);
+}
+
+.AP_BB_DOWN_2__recommendation-table {
+    margin-top: clamp(1.2rem, 100vw / 31.625, 2.4rem);
+    margin-bottom: clamp(1.2rem, 100vw / 31.625, 2.4rem);
+}
+
+th, td {
+    /* border: 1px solid #ddd; */
+    padding-top: clamp(1.2rem, 100vw / 31.625, 2.4rem);
+    padding-bottom: clamp(1.2rem, 100vw / 31.625, 2.4rem);
+}
+
+th:first-child, td:first-child {
+    width: calc(clamp(2.2rem, 100vw / 20.1, 3.3rem) + clamp(0.8rem, 100vw / 47.5, 1.6rem));
+    vertical-align: top; /* 垂直对齐到顶部 */
+}
+
+th:last-child, td:last-child {
+    width: auto;
+}
+
+.button_reboot {
+    display: block; /* 确保按钮是块级元素 */
+    width: clamp(29rem, 79vw, 35rem);
+    height: calc(clamp(29rem, 79vw, 35rem) * 0.15);
+    border: none;
+    border-radius: calc(calc(clamp(29rem, 79vw, 35rem) * 0.15) / 2);
+    background-color: var(--theme-state-red);
+    color: white;
+    font-size: clamp(1.8rem, 100vw / 25, 2.5rem);
+    font-weight: var(--font-weight-medium);
+    margin: clamp(3rem, 100vw / 12.65, 6rem) auto 0 auto;
+}

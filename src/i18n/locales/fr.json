@@ -1,0 +1,301 @@
+{
+    "title_summary": "Que s'est-il passé?",
+    "title_recommendations": "Recommandations :",
+    "button_reboot": "Redémarrer",
+
+    "AP_BB_DOWN_2": {
+        "title_head": "Connectivité<br />Broadband",
+        "Reboot": "Redémarrer",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Votre réseau a détecté des erreurs de résolution DNS (Système de noms de domaine). Cela signifie que votre appareil a des difficultés à traduire les noms de domaine (comme www.example.com) en adresses IP, ce qui peut vous empêcher d'accéder à des sites Web et à des services en ligne.",
+            "category": "CONNECTIVITÉ_BROADBAND"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Redémarrez votre routeur : ",
+                "text": "Débranchez votre routeur, attendez 30 secondes, puis rebranchez-le. Cela peut souvent résoudre des problèmes DNS."
+            },
+            {
+                "id": "2",
+                "key_text": "Vérifiez les paramètres DNS : ",
+                "text": "Assurez-vous que votre appareil est configuré pour utiliser un serveur DNS fiable. Vous pouvez utiliser des serveurs DNS publics comme Google DNS (8.8.8.8, 8.8.4.4) ou Cloudflare DNS (1.1.1.1)."
+            },
+            {
+                "id": "3",
+                "key_text": "Videz le cache DNS : ",
+                "text": "Sur votre ordinateur, vous pouvez vider le cache DNS pour supprimer les entrées obsolètes ou corrompues. Pour Windows, ouvrez l'invite de commande et tapez <1>ipconfig /flushdns</1>. Pour macOS, ouvrez le terminal et tapez <1>sudo killall -HUP mDNSResponder</1>."
+            },
+            {
+                "id": "4",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour."
+            },
+            {
+                "id": "5",
+                "key_text": "Vérifiez la configuration réseau : ",
+                "text": "Assurez-vous qu'il n'y a pas d'adresses IP ou de paramètres réseau conflictuels."
+            },
+            {
+                "id": "6",
+                "key_text": "Contactez votre fournisseur d'accès Internet : ",
+                "text": "Si le problème persiste, contactez votre fournisseur d'accès Internet pour vérifier s'il y a des problèmes de leur côté."
+            }
+        ]
+    },
+
+    "AP_BB_LAT_1": {
+        "title_head": "Latence<br />Broadband",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Votre connexion broadband a connu une latence élevée, ce qui peut affecter négativement les applications interactives telles que VoIP (Voix sur IP) et les jeux en ligne. Une latence élevée signifie qu'il y a un retard dans la transmission des données, causant du lag et de mauvaises performances.",
+            "category": "LATENCE_BROADBAND"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Vérifiez votre connexion : ",
+                "text": "Assurez-vous que tous les câbles sont correctement connectés et qu'il n'y a pas de dommages visibles."
+            },
+            {
+                "id": "2",
+                "key_text": "Redémarrez votre routeur : ",
+                "text": "Parfois, un simple redémarrage peut résoudre des problèmes de latence. Débranchez votre routeur, attendez 30 secondes, puis rebranchez-le."
+            },
+            {
+                "id": "3",
+                "key_text": "Fermez les applications inutiles : ",
+                "text": "Fermez toutes les applications ou appareils qui pourraient utiliser beaucoup de bande passante."
+            },
+            {
+                "id": "4",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour."
+            },
+            {
+                "id": "5",
+                "key_text": "Optimisez l'emplacement du routeur : ",
+                "text": "Placez votre routeur dans un endroit central, loin des murs et d'autres obstructions."
+            },
+            {
+                "id": "6",
+                "key_text": "Utilisez des connexions câblées : ",
+                "text": "Pour des applications critiques comme les jeux ou VoIP, utilisez une connexion Ethernet câblée au lieu de Wi-Fi."
+            },
+            {
+                "id": "7",
+                "key_text": "Contactez votre fournisseur d'accès Internet : ",
+                "text": "Si le problème persiste, contactez votre fournisseur d'accès Internet pour vérifier s'il y a des problèmes de leur côté ou pour mettre à niveau votre forfait."
+            }
+        ]
+    },
+
+    "AP_CPU_1": {
+        "title_head": "Santé AP",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Votre routeur a détecté une charge CPU élevée récemment. Cela peut conduire à une performance lente, des problèmes de connectivité, et un potentiel de surchauffe.",
+            "category": "SANTÉ_AP"
+        },
+        "conclusion": "Si le problème persiste, veuillez contacter votre fournisseur d'accès Internet (FAI) ou le fabricant du routeur pour une assistance supplémentaire.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Redémarrez votre routeur : ",
+                "text": "Débranchez votre routeur, attendez 30 secondes, puis rebranchez-le. Cela peut aider à réinitialiser l'utilisation du CPU."
+            },
+            {
+                "id": "2",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour. Les mises à jour du micrologiciel peuvent optimiser l'utilisation du CPU et corriger les bogues."
+            },
+            {
+                "id": "3",
+                "key_text": "Limitez les appareils connectés : ",
+                "text": "Réduisez le nombre d'appareils connectés à votre routeur pour diminuer la charge CPU."
+            },
+            {
+                "id": "4",
+                "key_text": "Fermez les applications inutiles : ",
+                "text": "Fermez toutes les applications ou services qui pourraient utiliser beaucoup de bande passante et de ressources CPU."
+            },
+            {
+                "id": "5",
+                "key_text": "Vérifiez la présence de logiciels malveillants : ",
+                "text": "Assurez-vous que votre réseau est sécurisé et exempt de logiciels malveillants pouvant causer une utilisation élevée du CPU."
+            },
+            {
+                "id": "6",
+                "key_text": "Réinitialisation d'usine : ",
+                "text": "Si le problème persiste, envisagez de procéder à une réinitialisation d'usine de votre routeur. Notez que cela effacera tous les paramètres, donc vous devrez reconfigurer votre réseau."
+            },
+            {
+                "id": "7",
+                "key_text": "Mettez à niveau le matériel : ",
+                "text": "Si votre routeur est ancien ou rencontre fréquemment des problèmes de charge CPU élevée, envisagez de le remplacer par un modèle plus récent avec un CPU plus puissant."
+            },
+            {
+                "id": "8",
+                "key_text": "Contactez le support : ",
+                "text": "Si le problème persiste, contactez votre fournisseur d'accès Internet ou le fabricant du routeur pour une assistance supplémentaire."
+            }
+        ]
+    },
+
+    "AP_MEM_1": {
+        "title_head": "Santé AP",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Votre routeur a détecté récemment des problèmes de mémoire basse. Cela peut entraîner une performance lente, des redémarrages fréquents et des problèmes de connectivité.",
+            "category": "SANTÉ_AP"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Redémarrez votre routeur : ",
+                "text": "Débranchez votre routeur, attendez 30 secondes, puis rebranchez-le. Cela peut libérer de la mémoire et améliorer les performances."
+            },
+            {
+                "id": "2",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour. Les mises à jour du micrologiciel peuvent optimiser l'utilisation de la mémoire et corriger les bogues."
+            },
+            {
+                "id": "3",
+                "key_text": "Limitez les appareils connectés : ",
+                "text": "Réduisez le nombre d'appareils connectés à votre routeur pour libérer de la mémoire."
+            },
+            {
+                "id": "4",
+                "key_text": "Fermez les applications inutiles : ",
+                "text": "Fermez toutes les applications ou services qui pourraient utiliser beaucoup de bande passante et de mémoire."
+            },
+            {
+                "id": "5",
+                "key_text": "Réinitialisation d'usine : ",
+                "text": "Si le problème persiste, envisagez de procéder à une réinitialisation d'usine de votre routeur. Notez que cela effacera tous les paramètres, donc vous devrez reconfigurer votre réseau."
+            },
+            {
+                "id": "6",
+                "key_text": "Mettez à niveau le matériel : ",
+                "text": "Si votre routeur est ancien ou rencontre fréquemment des problèmes de mémoire, envisagez de le remplacer par un modèle plus récent avec plus de mémoire."
+            },
+            {
+                "id": "7",
+                "key_text": "Contactez le support : ",
+                "text": "Si le problème persiste, contactez votre fournisseur d'accès Internet ou le fabricant du routeur pour une assistance supplémentaire."
+            }
+        ]
+    },
+
+    "AP_PWR_1": {
+        "title_head": "Santé AP",
+        "summary": {
+            "description": "Votre routeur a redémarré plusieurs fois récemment.",
+            "category": "SANTÉ_AP"
+        },
+        "conclusion": "Si le problème persiste, veuillez contacter votre fournisseur d'accès Internet (FAI) ou le fabricant du routeur pour une assistance supplémentaire.",
+        "recommendations_description": "S'il s'agit d'un redémarrage manuel ou d'une alimentation anormale, vous pouvez ignorer ce message.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Vérifiez l'alimentation : ",
+                "text": "Assurez-vous que votre routeur est connecté à une source d'alimentation stable. Évitez d'utiliser des multiprises ou des rallonges si possible."
+            },
+            {
+                "id": "2",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Vérifiez s'il y a des mises à jour de micrologiciel en attente pour votre routeur et installez-les."
+            },
+            {
+                "id": "3",
+                "key_text": "Améliorez la ventilation : ",
+                "text": "Assurez-vous que votre routeur est placé dans une zone bien ventilée pour éviter la surchauffe."
+            },
+            {
+                "id": "4",
+                "key_text": "Inspectez le matériel : ",
+                "text": "Recherchez des dommages visibles ou des connexions lâches. Si le routeur est ancien, envisagez de le remplacer."
+            }
+        ]
+    },
+
+    "INTF_NOI_1": {
+        "title_head": "Bruit Wi-Fi<br />Interférence",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Votre réseau Wi-Fi nommé <1>{{networkName}}</1> a détecté une interférence sévère. Cela peut causer des vitesses lentes, des connexions interrompues, et de mauvaises performances.",
+            "category": "INTERFÉRENCE_BRUIT_WIFI"
+        },
+        "conclusion": "Si le problème persiste, veuillez contacter votre fournisseur d'accès Internet (FAI) ou le fabricant du routeur pour une assistance supplémentaire.",
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Changez le canal Wi-Fi : ",
+                "text": "Accédez aux paramètres de votre routeur et changez le canal Wi-Fi pour un canal avec moins d'interférences. Les canaux 1, 6 et 11 sont souvent recommandés pour les réseaux 2,4 GHz, tandis que les réseaux 5 GHz ont plus de canaux parmi lesquels choisir."
+            },
+            {
+                "id": "2",
+                "key_text": "Déplacez le routeur : ",
+                "text": "Placez votre routeur dans un endroit central, loin des murs, objets métalliques et autres appareils électroniques susceptibles de provoquer des interférences."
+            },
+            {
+                "id": "3",
+                "key_text": "Réduisez les sources d'interférence : ",
+                "text": "Tenez des appareils comme des micro-ondes, des téléphones sans fil et des moniteurs pour bébé éloignés de votre routeur, car ils peuvent provoquer des interférences."
+            },
+            {
+                "id": "4",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour pour améliorer les performances et réduire les interférences."
+            },
+            {
+                "id": "5",
+                "key_text": "Utilisez des connexions câblées : ",
+                "text": "Pour des applications critiques, envisagez d'utiliser une connexion Ethernet câblée au lieu de Wi-Fi."
+            },
+            {
+                "id": "6",
+                "key_text": "Contactez le support : ",
+                "text": "Si le problème persiste, contactez votre fournisseur d'accès Internet ou le fabricant du routeur pour une assistance supplémentaire."
+            }
+        ]
+    },
+
+    "INTF_SET_3": {
+        "title_head": "Paramètres Wi-Fi",
+        "summary": {
+            "title": "Que s'est-il passé?",
+            "description": "Le réseau Wi-Fi nommé <1>{{networkName}}</1> a ses paramètres de sécurité ouverts ou désactivés. Cela signifie que le réseau n'est pas protégé par un mot de passe, le rendant vulnérable à un accès non autorisé et à des menaces potentielles à la sécurité.",
+            "category": "INTERFÉRENCE_BRUIT_WIFI"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Activez la sécurité Wi-Fi : ",
+                "text": "Accédez aux paramètres de votre routeur et activez la sécurité WPA3 ou WPA2. Cela exigera des utilisateurs qu'ils saisissent un mot de passe pour se connecter à votre réseau."
+            },
+            {
+                "id": "2",
+                "key_text": "Définissez un mot de passe fort : ",
+                "text": "Choisissez un mot de passe fort et unique pour votre réseau Wi-Fi. Évitez d'utiliser des mots de passe facilement devinables comme \"password\" ou \"12345678\"."
+            },
+            {
+                "id": "3",
+                "key_text": "Mettez à jour le micrologiciel : ",
+                "text": "Assurez-vous que le micrologiciel de votre routeur est à jour pour protéger contre les vulnérabilités connues."
+            },
+            {
+                "id": "4",
+                "key_text": "Surveillez les appareils connectés : ",
+                "text": "Vérifiez régulièrement la liste des appareils connectés à votre réseau pour vous assurer qu'il n'y a pas d'utilisateurs non autorisés."
+            },
+            {
+                "id": "5",
+                "key_text": "Contactez le support : ",
+                "text": "Si vous n'êtes pas sûr de la manière de changer ces paramètres, reportez-vous au manuel de votre routeur ou contactez l'équipe d'assistance de votre FAI pour obtenir de l'aide."
+            }
+        ]
+    }
+}
