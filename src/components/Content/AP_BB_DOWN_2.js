@@ -53,14 +53,6 @@ function AP_BB_DOWN_2() {
                                                 1: <span style={{ fontStyle: 'italic', color: 'black' }} />
                                             }}
                                         />
-
-                                        {/* {recommendation.text.split(/(ipconfig \/flushdns|sudo killall -HUP mDNSResponder)/g).map((part, index) => (
-                                            part.match(/ipconfig \/flushdns|sudo killall -HUP mDNSResponder/) ? (
-                                                <span key={index} style={{ fontStyle: 'italic', color: 'black' }}>{part}</span>
-                                            ) : (
-                                                part
-                                            )
-                                        ))} */}
                                     </p>
                                 </td>
                             </tr>
@@ -69,7 +61,7 @@ function AP_BB_DOWN_2() {
                     </tbody>
                 </table>
 
-                <button className='button_reboot' onClick={ () => {
+                <button className='button_action' onClick={ () => {
                     alert('Rebooting your device...');
                 }}>{button_reboot}</button>
             </div>
@@ -77,45 +69,6 @@ function AP_BB_DOWN_2() {
         
     );
 }
-
-// const summary1 = {
-//     title: 'What Happened?',
-//     description: 'Your network has detected DNS (Domain Name System) resolution errors. This means that your device is having trouble translating domain names (like www.example.com) into IP addresses, which can prevent you from accessing websites and online services.',
-//     category: 'BROADBAND_CONNECTIVITY',
-// }
-
-// const recommendations1 = [
-//     {
-//         id: 1,
-//         key_text: 'Restart Your Router: ',
-//         text: 'Unplug your router, wait for 30 seconds, and plug it back in. This can often resolve DNS issues.'
-//     },
-//     {
-//         id: 2,
-//         key_text: 'Check DNS Settings: ',
-//         text: 'Ensure your device is set to use a reliable DNS server. You can use public DNS servers like Google DNS (8.8.8.8, 8.8.4.4) or Cloudflare DNS (1.1.1.1).'
-//     },
-//     {
-//         id: 3,
-//         key_text: 'Clear DNS Cache: ',
-//         text: 'On your computer, you can clear the DNS cache to remove outdated or corrupted entries. For Windows, open Command Prompt and type ipconfig /flushdns. For macOS, open Terminal and type sudo killall -HUP mDNSResponder.'
-//     },
-//     {
-//         id: 4,
-//         key_text: 'Update Firmware: ',
-//         text: 'Make sure your router\'s firmware is up to date.'
-//     },
-//     {
-//         id: 5,
-//         key_text: 'Check Network Configuration: ',
-//         text: 'Ensure there are no conflicting IP addresses or network settings.'
-//     },
-//     {
-//         id: 6,
-//         key_text: 'Contact Your ISP: ',
-//         text: 'If the problem persists, contact your Internet Service Provider to check for any issues on their end.'
-//     }
-// ];
 
 export default AP_BB_DOWN_2;
 

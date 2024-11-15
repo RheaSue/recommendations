@@ -1,6 +1,12 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
 
+const optimizationAction = () => {
+  console.log('Optimization enable');
+  const message = { type: 'INTF_NOI_1', action: 'optimization_enable' };
+  window.ReactNativeWebView.postMessage(JSON.stringify(message));
+}
+
 function INTF_NOI_1(props) {
 
   const { networkName = "MyNetwork" } = props;
@@ -21,7 +27,7 @@ function INTF_NOI_1(props) {
 
         <div className='component__content-category-title-container'>
           <div className='category-bar'
-            style={{ backgroundColor: 'var(--theme-state-red)' }}></div>
+            style={{ backgroundColor: 'var(--theme-state-yellow)' }}></div>
           <h1>{title_head}</h1>
         </div>
       </div>
@@ -71,7 +77,7 @@ function INTF_NOI_1(props) {
           </tbody>
         </table>
 
-        <button className='button_reboot'>Optimization enable</button>
+        <button className='button_action' onClick={optimizationAction}>Optimization enable</button>
 
       </div>
 

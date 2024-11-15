@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 
 import '../i18n/i18n';
 
@@ -19,18 +19,31 @@ import '../assets/styles/textStyles.css';
 import '../assets/styles/global.css';
 
 function RecommendationPage() {
-    const { id } = useParams(); // get the id from the URL
 
-    const [activeComponent, setActiveComponent] = useState(id); // 管理当前组件状态
+    const { pathParams } = useParams(); // get the path from the URL
+    const [querySSIDName, setQuerySSIDName] = useState('\'\''); // get the query ssid name from the URL
+    const [queryLanguage, setQueryLanguage] = useState('en'); // get the query language from the URL ('fr' / 'en')
+    const [querySeverity, setQuerySeverity] = useState(null); // get the query severity from the URL ('action' / 'warning' / 'info')
+
+    const location = useLocation(); // get the current location
+
+    useEffect(() => {
+        const searchParams = new URLSearchParams(location.search);
+        const ssidNameParam = searchParams.get("ssidName");
+        setQuerySSIDName(ssidNameParam);
+        const languageParam = searchParams.get("language");
+        setQueryLanguage(languageParam);
+        const severityParam = searchParams.get("severity");
+        setQuerySeverity(severityParam);
+    }, [location.search]);
+
+    const [activeComponent, setActiveComponent] = useState(pathParams); // 管理当前组件状态
 
     // render the component based on the id
     const renderComponent = () => {
-
-        console.log("id", id);
-
         // debugger; // set a breakpoint here to debug the id value
-        if (!id) {
-            return <div>No component found for {id}</div>;
+        if (!pathParams) {
+            return <div>No component found for {pathParams}</div>;
         }
 
         switch (activeComponent) {
@@ -41,9 +54,9 @@ function RecommendationPage() {
             case "AP_CPU_1":
                 return <AP_CPU_1 />;
             case "INTF_SET_3":
-                return <INTF_SET_3 networkName="testNetworkName"/>;
+                return <INTF_SET_3 networkName={querySSIDName}/>;
             case "INTF_NOI_1":
-                return <INTF_NOI_1 networkName="testNetworkName2"/>;
+                return <INTF_NOI_1 networkName={querySSIDName}/>;
             case "AP_MEM_1":
                 return <AP_MEM_1 />;
             case "AP_PWR_1":
@@ -67,7 +80,7 @@ function RecommendationPage() {
                 <button onClick={() => setActiveComponent("AP_PWR_1")}>AP_PWR_1<br/>AP Health-Reboots</button>
             </div>
 
-            <Header />
+            <Header language={queryLanguage} />
             {renderComponent()}
         </div>
     );

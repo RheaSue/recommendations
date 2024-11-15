@@ -21,7 +21,7 @@ function INTF_SET_3(props) {
 
                 <div className='component__content-category-title-container'>
                     <div className='category-bar'
-                        style={{ backgroundColor: 'var(--theme-state-red)' }}></div>
+                        style={{ backgroundColor: 'var(--theme-state-yellow)' }}></div>
                     <h1>{title_head}</h1>
                 </div>
             </div>
@@ -69,7 +69,7 @@ function INTF_SET_3(props) {
                     </tbody>
                 </table>
 
-                <button className='button_reboot'>Reboot</button>
+                <button className='button_action'>Reboot</button>
             </div>
         </div>
     );

@@ -105,18 +105,18 @@ export default AP_BB_LAT_1;
 
 /*
 {
-        "id": 5,
-        "rank": 1,
-        "name": "AP_BB_LAT_1",
-        "priority": "MODERATE",
-        "severity": "ACTION",
-        "diagnosis": "Broadband latency has been too high for interactive applications such as VoIP or online gaming.",
-        "recommendation": "Check for possible backhaul network congestion issues.",
-        "category": "BROADBAND_LATENCY",
-        "categoryId": "BROADBAND_LATENCY",
-        "symptoms": [
-          "INRMT_CON"
-        ],
-        "actions": []
-      }
+    "id": 5,
+    "rank": 1,
+    "name": "AP_BB_LAT_1",
+    "priority": "MODERATE",
+    "severity": "ACTION",
+    "diagnosis": "Broadband latency has been too high for interactive applications such as VoIP or online gaming.",
+    "recommendation": "Check for possible backhaul network congestion issues.",
+    "category": "BROADBAND_LATENCY",
+    "categoryId": "BROADBAND_LATENCY",
+    "symptoms": [
+        "INRMT_CON"
+    ],
+    "actions": []
+}
 */

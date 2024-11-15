@@ -33,7 +33,7 @@ th:last-child, td:last-child {
     width: auto;
 }
 
-.button_reboot {
+.button_action {
     display: block; /* 确保按钮是块级元素 */
     width: clamp(29rem, 79vw, 35rem);
     height: calc(clamp(29rem, 79vw, 35rem) * 0.15);

@@ -17,7 +17,7 @@ function AP_MEM_1() {
             <div className='component__content-category-container'>
                 <div className='component__content-category-title-container'>
                     <div className='category-bar'
-                        style={{ backgroundColor: 'var(--theme-state-red)' }}></div>
+                        style={{ backgroundColor: 'var(--theme-state-yellow)' }}></div>
                     <h1>{title_head}</h1>
                 </div>
             </div>

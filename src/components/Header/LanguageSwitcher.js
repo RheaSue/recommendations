@@ -4,10 +4,10 @@ import FrenchIcon from '../../assets/images/French.png'
 import '../../assets/styles/componentStyles.css';
 import '../../assets/styles/components/LanguageSwitcher.css';
 
-function LanguageSwitcher({ onLanguageChange }) {
+function LanguageSwitcher({ language, onLanguageChange }) {
     const [isPopoverVisible, setPopoverVisible] = useState(false);
     const [selectedIcon, setSelectedIcon] = useState(EnglishIcon);
-    const [selectedLanguage, setSelectedLanguage] = useState('en'); // 新增状态来存储选中的语言
+    const [selectedLanguage, setSelectedLanguage] = useState(language || 'en'); // // 初始化为传入的语言,新增状态来存储选中的语言
     const popoverRef = useRef(null); // popover 容器的引用
 
     // 点击其他区域时关闭popover
@@ -24,6 +24,17 @@ function LanguageSwitcher({ onLanguageChange }) {
             document.removeEventListener('click', handleClickOutside);
         }
     }, []);
+
+    // 当传入的 language prop 发生变化时，更新语言和图标
+    useEffect(() => {
+        if (language === 'fr') {
+            setSelectedLanguage('fr');
+            setSelectedIcon(FrenchIcon);
+        } else {
+            setSelectedLanguage('en');
+            setSelectedIcon(EnglishIcon);
+        }
+    }, [language]);
 
     // 切换语言
     const switchLanguage = (language, icon) => {
