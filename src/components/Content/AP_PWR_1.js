@@ -67,13 +67,15 @@ function AP_PWR_1() {
   );
 }
 
-const summary = {
+// eslint-disable-next-line no-unused-vars
+const summary1 = {
   title: 'What Happened?',
   description: 'Your router has rebooted multiple times recently.',
   category: 'AP_HEALTH',
 }
 
-const recommendations = [
+// eslint-disable-next-line no-unused-vars
+const recommendations1 = [
   {
     id: 1,
     key_text: 'Check Power Supply: ',

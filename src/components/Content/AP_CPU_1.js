@@ -60,13 +60,15 @@ function AP_CPU_1() {
     );
 }
 
-const summary = {
+// eslint-disable-next-line no-unused-vars
+const summary1 = {
     title: 'What Happened?',
     description: 'Your router has detected high CPU load recently. This can lead to slow performance, connectivity issues, and potential overheating.',
     category: 'AP_HEALTH',
 }
 
-const recommendations = [
+// eslint-disable-next-line no-unused-vars
+const recommendations1 = [
     {
         id: 1,
         key_text: 'Restart Your Router: ',

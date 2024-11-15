@@ -55,12 +55,14 @@ function AP_BB_LAT_1() {
     );
 }
 
+// eslint-disable-next-line no-unused-vars
 const summary1 = {
     title: 'What Happened?',
     description: 'Your broadband connection has been experiencing high latency, which can negatively impact interactive applications such as VoIP (Voice over Internet Protocol) and online gaming. High latency means there is a delay in data transmission, causing lag and poor performance.',
     category: 'BROADBAND_LATENCY',
 }
 
+// eslint-disable-next-line no-unused-vars
 const recommendations1 = [
     {
         id: 1,
