@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/recommendations/static/css/main.a4502481.css",
-    "main.js": "/recommendations/static/js/main.6796fb47.js",
+    "main.js": "/recommendations/static/js/main.e0c53808.js",
     "static/media/logo_hitron.png": "/recommendations/static/media/logo_hitron.8cf49498dd17e64f6f6c.png",
     "index.html": "/recommendations/index.html",
     "main.a4502481.css.map": "/recommendations/static/css/main.a4502481.css.map",
-    "main.6796fb47.js.map": "/recommendations/static/js/main.6796fb47.js.map"
+    "main.e0c53808.js.map": "/recommendations/static/js/main.e0c53808.js.map"
   },
   "entrypoints": [
     "static/css/main.a4502481.css",
-    "static/js/main.6796fb47.js"
+    "static/js/main.e0c53808.js"
   ]
 }
