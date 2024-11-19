@@ -1,7 +1,5 @@
 // import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HashRouter, Routes, Route } from "react-router-dom"; // use HashRouter instead of BrowserRouter for better SEO on GitHub
-import { useEffect, useState } from "react";
-
 // import './App.css';
 import RecommendationPage from "./pages/RecommendationPage";
 

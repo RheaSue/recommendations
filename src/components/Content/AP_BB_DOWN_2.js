@@ -1,6 +1,31 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
 
+const rebootAction = () => {
+    console.log('Reboot Action');
+    const message = { type: 'AP_BB_DOWN_2', action: 'reboot' };
+    try { // iOS 适用
+        window.webkit.messageHandlers.actionReboot.postMessage(message);
+        return;
+    } catch (e) {
+        console.log("iOS Is Null")
+    }
+
+    try { // android 适用
+        window.androidFunction.actionReboot(message);
+        return;
+    } catch (e) {
+        console.log("android Is Null")
+    }
+
+    try {
+        window.opener.postMessage(message)
+        return;
+    } catch (e) {
+        console.log("window Is Null")
+    }
+}
+
 function AP_BB_DOWN_2() {
 
     const { t } = useTranslation(); // 使用 t 函数获取翻译
@@ -61,9 +86,7 @@ function AP_BB_DOWN_2() {
                     </tbody>
                 </table>
 
-                <button className='button_action' onClick={ () => {
-                    alert('Rebooting your device...');
-                }}>{button_reboot}</button>
+                <button className='button_action' onClick={rebootAction}>{button_reboot}</button>
             </div>
         </div>
         

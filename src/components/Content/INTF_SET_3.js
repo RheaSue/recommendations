@@ -1,6 +1,32 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
 
+const changeCredentialsAction = () => {
+
+    const message = { type: 'INTF_SET_3', action: 'change_credentials' };
+
+    try { // iOS 适用
+        window.webkit.messageHandlers.actionChangeCredentials.postMessage(message);
+        return;
+    } catch (e) {
+        console.log("iOS Is Null")
+    }
+    
+    try { // android 适用
+        window.androidFunction.actionChangeCredentials(message);
+        return;
+    } catch (e) {
+        console.log("android Is Null")
+    }
+
+    try {
+        window.opener.postMessage(message);
+        return;
+    } catch (e) {
+        console.log("window Is Null")
+    }
+}
+
 function INTF_SET_3(props) {
 
     const { networkName = "MyNetwork" } = props;
@@ -8,6 +34,7 @@ function INTF_SET_3(props) {
     const { t } = useTranslation(); // 使用 t 函数获取翻译
 
     const title_head = <Trans i18nKey={"INTF_SET_3.title_head"} />;
+    const button_changeCredentials = t("button_changeCredentials");
 
     const title_summary = t("title_summary");
     const summary = t("INTF_SET_3.summary", { returnObjects: true });
@@ -69,7 +96,7 @@ function INTF_SET_3(props) {
                     </tbody>
                 </table>
 
-                <button className='button_action'>Reboot</button>
+                <button className='button_action' onClick={changeCredentialsAction}>{button_changeCredentials}</button>
             </div>
         </div>
     );

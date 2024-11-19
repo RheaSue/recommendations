@@ -46,7 +46,7 @@ function RecommendationPage() {
             return <div>No component found for {pathParams}</div>;
         }
 
-        switch (activeComponent) {
+        switch (pathParams) {
             case "AP_BB_DOWN_2":
                 return <AP_BB_DOWN_2 />;
             case "AP_BB_LAT_1":
@@ -62,7 +62,7 @@ function RecommendationPage() {
             case "AP_PWR_1":
                 return <AP_PWR_1 />;
             default:
-                return <div>No component found for {activeComponent}</div>;
+                return <div>No component found for {pathParams}</div>;
         }
     };
 
@@ -70,7 +70,7 @@ function RecommendationPage() {
         <div>
 
             {/* for testing purposes, add a button to switch between components */}
-            <div className="tabs">
+            {/* <div className="tabs">
                 <button onClick={() => setActiveComponent("AP_BB_DOWN_2")}>AP_BB_DOWN_2<br/>Broadband Connectivity</button>
                 <button onClick={() => setActiveComponent("AP_BB_LAT_1")}>AP_BB_LAT_1<br/>Broadband Latency</button>
                 <button onClick={() => setActiveComponent("AP_CPU_1")}>AP_CPU_1<br/>AP Health-high CPU</button>
@@ -78,7 +78,7 @@ function RecommendationPage() {
                 <button onClick={() => setActiveComponent("INTF_NOI_1")}>INTF_NOI_1<br/>Wi-Fi Noise Interference</button>
                 <button onClick={() => setActiveComponent("AP_MEM_1")}>AP_MEM_1<br/>AP Health-low-memory</button>
                 <button onClick={() => setActiveComponent("AP_PWR_1")}>AP_PWR_1<br/>AP Health-Reboots</button>
-            </div>
+            </div> */}
 
             <Header language={queryLanguage} />
             {renderComponent()}

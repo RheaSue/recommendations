@@ -4,7 +4,27 @@ import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
 const optimizationAction = () => {
   console.log('Optimization enable');
   const message = { type: 'INTF_NOI_1', action: 'optimization_enable' };
-  window.ReactNativeWebView.postMessage(JSON.stringify(message));
+  // window.ReactNativeWebView.postMessage(JSON.stringify(message));
+  try { // iOS 适用
+    window.webkit.messageHandlers.actionOptimizationEnable.postMessage(message);
+    return;
+  } catch (e) {
+    console.log("iOS Is Null")
+  }
+  
+  try { // android 适用
+    window.androidFunction.actionOptimizationEnable(message);
+    return;
+  } catch (e) {
+    console.log("android Is Null")
+  }
+
+  try {
+    window.opener.postMessage(message);
+    return;
+  } catch (e) {
+    console.log("window Is Null")
+  }
 }
 
 function INTF_NOI_1(props) {
@@ -14,6 +34,7 @@ function INTF_NOI_1(props) {
   const { t } = useTranslation(); // 使用 t 函数获取翻译
 
   const title_head = <Trans i18nKey={"INTF_NOI_1.title_head"} />;
+  const button_OptimizationEnable = t("button_OptimizationEnable");
 
   const title_summary = t("title_summary");
   const summary = t("INTF_NOI_1.summary", { returnObjects: true });
@@ -77,7 +98,7 @@ function INTF_NOI_1(props) {
           </tbody>
         </table>
 
-        <button className='button_action' onClick={optimizationAction}>Optimization enable</button>
+        <button className='button_action' onClick={optimizationAction}>{button_OptimizationEnable}</button>
 
       </div>
 

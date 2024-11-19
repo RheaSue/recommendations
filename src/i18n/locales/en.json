@@ -2,6 +2,8 @@
     "title_summary": "What Happened?",
     "title_recommendations": "Recommendations:",
     "button_reboot": "Reboot",
+    "button_changeCredentials": "Change credentials",
+    "button_OptimizationEnable": "Optimization Enable",
 
     "AP_BB_DOWN_2": {
         "title_head": "Broadband<br />Connectivity",
