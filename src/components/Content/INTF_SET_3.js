@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import bg_no_password from '../../assets/images/issuesImage/bg_no_password.png';
 
 const changeCredentialsAction = () => {
 
@@ -41,6 +42,9 @@ function INTF_SET_3(props) {
 
     const title_recommendations = t("title_recommendations");
     const recommendations = t("INTF_SET_3.recommendations", { returnObjects: true });
+    const recommendations_description = t("INTF_SET_3.recommendations_description");
+
+    const conclusion = t("INTF_SET_3.conclusion");
 
     return (
         <div>
@@ -75,9 +79,11 @@ function INTF_SET_3(props) {
                 </p>
 
                 <img className='issue_image' 
-                    src='http://gips1.baidu.com/it/u=3874647369,3220417986&fm=3028&app=3028&f=JPEG&fmt=auto?w=720&h=1280' alt='issue_image' />
+                    src={bg_no_password} alt='bg_no_password' />
 
                 <h2>{title_recommendations}</h2>
+
+                <p className='component__content-p-padding-bottom'>{recommendations_description}</p>
 
                 <table className='AP_BB_DOWN_2__recommendation-table'>
                     <tbody>
@@ -88,7 +94,16 @@ function INTF_SET_3(props) {
                                 </td>
 
                                 <td>
-                                    <p><span className='p_recommendation_list_key'>{recommendation.key_text} </span>{recommendation.text}</p>
+                                    <p>
+                                        <span className='p_recommendation_list_key'>{recommendation.key_text}</span>
+
+                                        <Trans
+                                        i18nKey={recommendation.text}
+                                        components={{
+                                            1: <span style={{ color: 'var(--theme-minor-color)' }} />
+                                        }}
+                                    />
+                                    </p>
                                 </td>
                             </tr>
                         )
@@ -96,45 +111,13 @@ function INTF_SET_3(props) {
                     </tbody>
                 </table>
 
-                <button className='button_action' onClick={changeCredentialsAction}>{button_changeCredentials}</button>
+                <p>{conclusion}</p>
+
+                {/* <button className='button_action' onClick={changeCredentialsAction}>{button_changeCredentials}</button> */}
             </div>
         </div>
     );
 }
-
-// const summary1 = {
-//     title: 'What Happened?',
-//     description: 'The Wi-Fi network named {networkName} has its security settings open or disabled. This means that the network is not protected by a password, making it vulnerable to unauthorized access and potential security threats.',
-//     category: 'WIFI_SETTINGS',
-// }
-
-// const recommendations1 = [
-//     {
-//         id: 1,
-//         key_text: 'Enable Wi-Fi Security: ',
-//         text: 'Access your router\'s settings and enable WPA3 or WPA2 security. This will require users to enter a password to connect to your network.'
-//     },
-//     {
-//         id: 2,
-//         key_text: 'Set a Strong Password: ',
-//         text: 'Choose a strong, unique password for your Wi-Fi network. Avoid using easily guessable passwords like "password" or "12345678".'
-//     },
-//     {
-//         id: 3,
-//         key_text: 'Update Firmware: ',
-//         text: 'Ensure your router\'s firmware is up to date to protect against known vulnerabilities.'
-//     },
-//     {
-//         id: 4,
-//         key_text: 'Monitor Connected Devices: ',
-//         text: 'Regularly check the list of devices connected to your network to ensure there are no unauthorized users.'
-//     },
-//     {
-//         id: 5,
-//         key_text: 'Contact Support: ',
-//         text: 'If you\'re unsure how to change these settings, refer to your router\'s manual or contact your ISP support team for assistance.'
-//     }
-// ];
 
 export default INTF_SET_3;
 

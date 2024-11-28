@@ -22,7 +22,7 @@ function Header(props) {
         <header>
             <div className='component__header'>
                 <img src={logo_hitron} alt="logo" />
-                <LanguageSwitcher language={selectedLanguage} onLanguageChange={changeLanguage} />
+                {/* <LanguageSwitcher language={selectedLanguage} onLanguageChange={changeLanguage} /> */}
             </div>
         </header>
     );

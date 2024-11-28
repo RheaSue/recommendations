@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import bg_reboot_multiple from '../../assets/images/issuesImage/bg_reboot_multiple.png';
 
 function AP_PWR_1() {
 
@@ -34,8 +35,7 @@ function AP_PWR_1() {
 
         <img
           className='issue_image'
-          src='https://gips1.baidu.com/it/u=942200867,4215273736&fm=3028&app=3028&f=JPEG&fmt=auto&q=100&size=f576_1024'
-          alt='issue_image' />
+          src={bg_reboot_multiple} alt='bg_reboot_multiple' />
 
         <h2>{title_recommendations}</h2>
 
@@ -66,37 +66,6 @@ function AP_PWR_1() {
     </div>
   );
 }
-
-// eslint-disable-next-line no-unused-vars
-const summary1 = {
-  title: 'What Happened?',
-  description: 'Your router has rebooted multiple times recently.',
-  category: 'AP_HEALTH',
-}
-
-// eslint-disable-next-line no-unused-vars
-const recommendations1 = [
-  {
-    id: 1,
-    key_text: 'Check Power Supply: ',
-    text: 'Ensure your router is connected to a stable power source. Avoid using power strips or extension cords if possible.'
-  },
-  {
-    id: 2,
-    key_text: 'Update Firmware: ',
-    text: 'Check if there are any pending firmware updates for your router and install them.'
-  },
-  {
-    id: 3,
-    key_text: 'Improve Ventilation: ',
-    text: 'Make sure your router is placed in a well-ventilated area to prevent overheating.'
-  },
-  {
-    id: 4,
-    key_text: 'Inspect Hardware: ',
-    text: 'Look for any visible damage or loose connections. If the router is old, consider replacing it.'
-  }
-];
 
 export default AP_PWR_1;
 

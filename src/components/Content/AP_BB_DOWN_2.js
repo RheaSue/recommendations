@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import bg_dns_resolution_error from '../../assets/images/issuesImage/bg_dns_resolution_error.png';
 
 const rebootAction = () => {
     console.log('Reboot Action');
@@ -56,7 +57,7 @@ function AP_BB_DOWN_2() {
                 <p>{summary.description}</p>
 
                 <img className='issue_image' 
-                    src='http://gips2.baidu.com/it/u=195724436,3554684702&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960' alt='issue_image' />
+                    src={bg_dns_resolution_error} alt='bg_dns_resolution_error' />
 
                 <h2>{title_recommendations}</h2>
 
@@ -86,7 +87,7 @@ function AP_BB_DOWN_2() {
                     </tbody>
                 </table>
 
-                <button className='button_action' onClick={rebootAction}>{button_reboot}</button>
+                {/* <button className='button_action' onClick={rebootAction}>{button_reboot}</button> */}
             </div>
         </div>
         

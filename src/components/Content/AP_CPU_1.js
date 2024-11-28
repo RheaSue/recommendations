@@ -1,5 +1,6 @@
 import { useTranslation, Trans } from 'react-i18next';
 import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import bg_high_cpu from '../../assets/images/issuesImage/bg_high_cpu.png';
 
 function AP_CPU_1() {
 
@@ -12,9 +13,7 @@ function AP_CPU_1() {
     
     const title_recommendations = t("title_recommendations");
     const recommendations = t("AP_CPU_1.recommendations", { returnObjects: true });
-
-    const conclusion = t("AP_CPU_1.conclusion");
-
+    
     return (
         <div>
             <div className='component__content-category-container' >
@@ -32,7 +31,7 @@ function AP_CPU_1() {
                 <p>{summary.description}</p>
 
                 <img className='issue_image' 
-                    src='http://gips3.baidu.com/it/u=3660856539,3077947179&fm=3028&app=3028&f=JPEG&fmt=auto?w=1280&h=960' alt='issue_image' />
+                    src={bg_high_cpu} alt='bg_high_cpu' />
 
                 <h2>{title_recommendations}</h2>
 
@@ -52,65 +51,11 @@ function AP_CPU_1() {
                         )}
                     </tbody>
                 </table>
-
-                <p>{conclusion}</p>
             </div>
         </div>
         
     );
 }
-
-// eslint-disable-next-line no-unused-vars
-const summary1 = {
-    title: 'What Happened?',
-    description: 'Your router has detected high CPU load recently. This can lead to slow performance, connectivity issues, and potential overheating.',
-    category: 'AP_HEALTH',
-}
-
-// eslint-disable-next-line no-unused-vars
-const recommendations1 = [
-    {
-        id: 1,
-        key_text: 'Restart Your Router: ',
-        text: 'Unplug your router, wait for 30 seconds, and plug it back in. This can help reset the CPU usage.'
-    },
-    {
-        id: 2,
-        key_text: 'Update Firmware: ',
-        text: 'Ensure your router\'s firmware is up to date. Firmware updates can optimize CPU usage and fix bugs.'
-    },
-    {
-        id: 3,
-        key_text: 'Limit Connected Devices: ',
-        text: 'Reduce the number of devices connected to your router to lower the CPU load.'
-    },
-    {
-        id: 4,
-        key_text: 'Close Unnecessary Applications: ',
-        text: 'Shut down any applications or services that might be using a lot of bandwidth and CPU resources.'
-    },
-    {
-        id: 5,
-        key_text: 'Check for Malware: ',
-        text: 'Ensure your network is secure and free from malware that could be causing high CPU usage.'
-    },
-    {
-        id: 6,
-        key_text: 'Factory Reset: ',
-        text: 'If the problem persists, consider performing a factory reset on your router. Note that this will erase all settings, so you will need to reconfigure your network.'
-    },
-    {
-        id: 7,
-        key_text: 'Upgrade Hardware: ',
-        text: 'If your router is old or frequently runs into high CPU load issues, consider upgrading to a newer model with a more powerful CPU.'
-    },
-    {
-        id: 8,
-        key_text: 'Contact Support: ',
-        text: 'If the issue continues, contact your Internet Service Provider or the router manufacturer for further assistance.'
-    }
-];
-
 
 export default AP_CPU_1;
 
