@@ -86,10 +86,15 @@ function RecommendationPage() {
                 <button onClick={() => setActiveComponent("AP_BB_DOWN_2")}>AP_BB_DOWN_2<br/>Broadband Connectivity</button>
                 <button onClick={() => setActiveComponent("AP_BB_LAT_1")}>AP_BB_LAT_1<br/>Broadband Latency</button>
                 <button onClick={() => setActiveComponent("AP_CPU_1")}>AP_CPU_1<br/>AP Health-high CPU</button>
-                <button onClick={() => setActiveComponent("INTF_SET_3")}>INTF_SET_3<br/>Wi-Fi Settings</button>
-                <button onClick={() => setActiveComponent("INTF_NOI_1")}>INTF_NOI_1<br/>Wi-Fi Noise Interference</button>
+                <button onClick={() => setActiveComponent("AP_CPU_2")}>AP_CPU_2<br/>AP Health-high CPU</button>
                 <button onClick={() => setActiveComponent("AP_MEM_1")}>AP_MEM_1<br/>AP Health-low-memory</button>
                 <button onClick={() => setActiveComponent("AP_PWR_1")}>AP_PWR_1<br/>AP Health-Reboots</button>
+                <button onClick={() => setActiveComponent("EXT_BB_DOWN_1")}>EXT_BB_DOWN_1<br/>Extender Disconnection</button>
+                <button onClick={() => setActiveComponent("EXT_BB_DOWN_4")}>EXT_BB_DOWN_4<br/>Extender Disconnection</button>
+                <button onClick={() => setActiveComponent("EXT_BB_LAT_1")}>EXT_BB_LAT_1<br/>Extender Latency</button>
+                <button onClick={() => setActiveComponent("INTF_SET_3")}>INTF_SET_3<br/>Wi-Fi Settings</button>
+                <button onClick={() => setActiveComponent("INTF_NOI_1")}>INTF_NOI_1<br/>Wi-Fi Noise Interference</button>
+                <button onClick={() => setActiveComponent("INTF_INT_1")}>INTF_INT_1<br/>Wi-Fi Noise Interference</button>
             </div> */}
 
             <Header language={queryLanguage} />

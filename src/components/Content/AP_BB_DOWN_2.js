@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
-import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import '../../assets/styles/components/Content_Style.css';
 import bg_dns_resolution_error from '../../assets/images/issuesImage/bg_dns_resolution_error.png';
 
 const rebootAction = () => {
@@ -61,7 +61,7 @@ function AP_BB_DOWN_2() {
 
                 <h2>{title_recommendations}</h2>
 
-                <table className='AP_BB_DOWN_2__recommendation-table'>
+                <table className='content__recommendation-table'>
                     <tbody>
                         {recommendations.map(recommendation => (
                             <tr>

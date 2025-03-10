@@ -13,7 +13,7 @@
     padding-bottom: clamp(4rem, 100vw / 9.5, 8rem);
 }
 
-.AP_BB_DOWN_2__recommendation-table {
+.content__recommendation-table {
     margin-top: clamp(1.2rem, 100vw / 31.625, 2.4rem);
     margin-bottom: clamp(1.2rem, 100vw / 31.625, 2.4rem);
 }

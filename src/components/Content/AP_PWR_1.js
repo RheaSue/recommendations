@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
-import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import '../../assets/styles/components/Content_Style.css';
 import bg_reboot_multiple from '../../assets/images/issuesImage/bg_reboot_multiple.png';
 
 function AP_PWR_1() {
@@ -42,7 +42,7 @@ function AP_PWR_1() {
         <p className='
         component__content-p-padding-bottom'>{recommendations_description}</p>
 
-        <table className='AP_BB_DOWN_2__recommendation-table'>
+        <table className='content__recommendation-table'>
           <tbody>
             {recommendations.map(recommendation => (
               <tr>

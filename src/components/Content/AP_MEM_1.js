@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
-import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import '../../assets/styles/components/Content_Style.css';
 import bg_low_memory from '../../assets/images/issuesImage/bg_low_memory.png';
 
 function AP_MEM_1() {
@@ -33,7 +33,7 @@ function AP_MEM_1() {
 
                 <h2>{title_recommendations}</h2>
 
-                <table className='AP_BB_DOWN_2__recommendation-table'>
+                <table className='content__recommendation-table'>
                     <tbody>
                         {recommendations.map(recommendation => (
                             <tr>

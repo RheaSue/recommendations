@@ -1,5 +1,5 @@
 import { useTranslation, Trans } from 'react-i18next';
-import '../../assets/styles/components/AP_BB_DOWN_2_Style.css';
+import '../../assets/styles/components/Content_Style.css';
 import bg_broadband_latency from '../../assets/images/issuesImage/bg_broadband_latency.png';
 
 function AP_BB_LAT_1() {
@@ -35,7 +35,7 @@ function AP_BB_LAT_1() {
 
                 <h2>{title_recommendations}</h2>
 
-                <table className='AP_BB_DOWN_2__recommendation-table'>
+                <table className='content__recommendation-table'>
                     <tbody>
                         {recommendations.map(recommendation => (
                             <tr>

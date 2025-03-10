@@ -9,7 +9,6 @@
         "title_head": "Erreur de <br/>résolution DNS",
         "Reboot": "Redémarrer",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Votre réseau a détecté des erreurs de résolution DNS (Système de noms de domaine). Cela signifie que votre appareil a des difficultés à traduire les noms de domaine (Ex : www.example.com) en adresses IP, ce qui peut vous empêcher d'accéder à des sites web et à des services en ligne.",
             "category": "CONNECTIVITÉ_BROADBAND"
         },
@@ -35,7 +34,6 @@
     "AP_BB_LAT_1": {
         "title_head": "Alerte de latence",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Votre connexion broadband a connu une latence élevée, ce qui peut nuire aux applications interactives telles que la VoIP (Voix sur protocole Internet) ou les jeux en ligne. Une latence élevée signifie qu'il y a un délai dans la transmission des données, causant un lag et une mauvaise performance.",
             "category": "LATENCE_BROADBAND"
         },
@@ -71,7 +69,6 @@
     "AP_CPU_1": {
         "title_head": "État de votre <br />équipement",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Votre passerelle/routeur a détecté une charge CPU élevée récemment. Cela peut entraîner une performance lente, des problèmes de connectivité et un risque de surchauffe.",
             "category": "ÉTAT_AP"
         },
@@ -97,7 +94,6 @@
     "AP_MEM_1": {
         "title_head": "État de votre <br />équipement",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Votre passerelle/routeur a détecté des problèmes de mémoire basse récemment. Cela peut entraîner une performance lente, des redémarrages fréquents et des problèmes de connectivité.",
             "category": "ÉTAT_AP"
         },
@@ -150,7 +146,6 @@
     "EXT_BB_DOWN_1": {
         "title_head": "Déconnexions Internet <br />sur l'extendeur",
         "summary": {
-            "title": "Qu'est-ce qui est arrivé ?",
             "description": "Des déconnexions Internet ont été détectées sur votre extendeur Wi-Fi <1>{{networkName}}</1>, ce qui cause des problèmes de connectivité intermittents.",
             "category": "WIFI_EXTENDER_PERFORMANCE"
         },
@@ -172,8 +167,8 @@
             },
             {
                 "id": "4",
-                "key_text": "Améliorer la ventilation : ",
-                "text": "Assurez-vous que votre extendeur est dans une zone bien ventilée pour éviter la surchauffe, qui peut affecter les performances."
+                "key_text": "Redémarrer votre extendeur : ",
+                "text": "Débranchez votre extendeur, attendez 5 secondes et reconnectez-le."
             }
         ]
     },
@@ -181,7 +176,6 @@
     "EXT_BB_LAT_1": {
         "title_head": "Alerte de latence <br />de la backhaul de l'extendeur",
         "summary": {
-            "title": "Qu'est-ce qui est arrivé ?",
             "description": "Une latence élevée a été détectée sur votre extendeur Wi-Fi <1>{{networkName}}</1>, ce qui entraîne de mauvaises performances et des problèmes de connectivité pour des applications interactives comme le VoIP et les jeux en ligne.",
             "category": "WIFI_EXTENDER_PERFORMANCE"
         },
@@ -203,8 +197,8 @@
             },
             {
                 "id": "4",
-                "key_text": "Redémarrer votre extendeur : ",
-                "text": "Débranchez votre extendeur, attendez 5 secondes et reconnectez-le."
+                "key_text": "Améliorer la ventilation : ",
+                "text": "Assurez-vous que votre extendeur est dans une zone bien ventilée pour éviter la surchauffe, qui peut affecter les performances."
             }
         ]
     },
@@ -212,7 +206,6 @@
     "INTF_NOI_1": {
         "title_head": "Alerte de forte <br />interférence",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Votre réseau Wi-Fi nommé <1>{{networkName}}</1> a détecté une forte interférence. Cela peut causer des vitesses lentes, des connexions interrompues et de mauvaises performances.",
             "category": "INTERFERENCE_WIFI_NOISE"
         },
@@ -243,7 +236,6 @@
     "INTF_SET_3": {
         "title_head": "Votre réseau n'est pas <br />protégé par un mot de  <br />passe Wi-Fi",
         "summary": {
-            "title": "Que s'est-il passé ?",
             "description": "Le réseau Wi-Fi nommé <1>{{networkName}}</1> a ses paramètres de sécurité ouverts ou désactivés. Cela signifie que le réseau n'est pas protégé par un mot de passe, le rendant vulnérable à des accès non autorisés et à des menaces potentielles pour la sécurité.",
             "category": "INTERFERENCE_WIFI_NOISE"
         },

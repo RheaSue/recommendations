@@ -9,7 +9,6 @@
         "title_head": "DNS Resolution<br/>Error",
         "Reboot": "Reboot",
         "summary": {
-            "title": "What Happened?",
             "description": "Your network has detected DNS (Domain Name System) resolution errors. This means that your device is having trouble translating domain names (Ex: www.example.com) into IP addresses, which can prevent you from accessing websites and online services.",
             "category": "BROADBAND_CONNECTIVITY"
         },
@@ -35,7 +34,6 @@
     "AP_BB_LAT_1": {
         "title_head": "Latency Alert",
         "summary": {
-            "title": "What Happened?",
             "description": "Your broadband connection has been experiencing high latency, which can negatively impact interactive applications such as VoIP (Voice over Internet Protocol) or online gaming. High latency means there is a delay in data transmission, causing lag and poor performance.",
             "category": "BROADBAND_LATENCY"
         },
@@ -71,7 +69,6 @@
     "AP_CPU_1": {
         "title_head": "Your Equipment <br />Health",
         "summary": {
-            "title": "What Happened?",
             "description": "Your gateway/router has detected high CPU load recently. This can lead to slow performance, connectivity issues, and potential overheating.",
             "category": "AP_HEALTH"
         },
@@ -97,7 +94,6 @@
     "AP_MEM_1": {
         "title_head": "Your Equipment <br />Health",
         "summary": {
-            "title": "What Happened?",
             "description": "Your gateway/router has detected low-memory issues recently. This can lead to slow performance, frequent reboots, and connectivity problems.",
             "category": "AP_HEALTH"
         },
@@ -147,10 +143,9 @@
         ]
     },
 
-    "EXT_BB_DOWN_4": {
+    "EXT_BB_DOWN_1": {
         "title_head": "Internet Disconnections <br />at Extender",
         "summary": {
-            "title": "What Happened?",
             "description": "Internet disconnections have been detected at your Wi-Fi extender <1>{{networkName}}</1>, causing intermittent connectivity issues.",
             "category": "AP_HEALTH"
         },
@@ -172,8 +167,8 @@
             },
             {
                 "id": "4",
-                "key_text": "Improve Ventilation: ",
-                "text": "Ensure your extender is in a well-ventilated area to prevent overheating, which can affect performance."
+                "key_text": "Restart your extender: ",
+                "text": "Unplug your extender, wait for 5 seconds, and plug it back in."
             }
         ]
     },
@@ -181,9 +176,8 @@
     "EXT_BB_LAT_1": {
         "title_head": "Extender Backhaul <br />Latency Alert",
         "summary": {
-            "title": "What Happened?",
             "description": "High latency has been detected on your Wi-Fi extender <1>{{networkName}}</1>, causing poor performance and connectivity issues for interactive applications like VoIP and online gaming.",
-            "category": "AP_HEALTH"
+            "category": "WIFI_EXTENDER_PERFORMANCE"
         },
         "recommendations": [
             {
@@ -203,8 +197,8 @@
             },
             {
                 "id": "4",
-                "key_text": "Restart your extender: ",
-                "text": "Unplug your extender, wait for 5 seconds, and plug it back in."
+                "key_text": "Improve Ventilation: ",
+                "text": "Ensure your extender is in a well-ventilated area to prevent overheating, which can affect performance."
             }
         ]
     },
@@ -212,7 +206,6 @@
     "INTF_NOI_1": {
         "title_head": "Severe Interference <br />Alert",
         "summary": {
-            "title": "What Happened?",
             "description": "Your Wi-Fi network named <1>{{networkName}}</1> has detected severe interference. This can cause slow speeds, dropped connections, and poor performance.",
             "category": "WIFI_NOISE_INTERFERENCE"
         },
@@ -243,7 +236,6 @@
     "INTF_SET_3": {
         "title_head": "Your network is not<br />protected by a Wi-Fi<br />password",
         "summary": {
-            "title": "What Happened?",
             "description": "The Wi-Fi network named <1>{{networkName}}</1> has its security settings open or disabled. This means that the network is not protected by a password, making it vulnerable to unauthorized access and potential security threats.",
             "category": "WIFI_NOISE_INTERFERENCE"
         },
