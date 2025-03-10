@@ -147,11 +147,11 @@
         ]
     },
 
-    "EXT_BB_LAT_1": {
-        "title_head": "Extender Backhaul <br />Latency Alert",
+    "EXT_BB_DOWN_4": {
+        "title_head": "Internet Disconnections <br />at Extender",
         "summary": {
             "title": "What Happened?",
-            "description": "High latency has been detected on your Wi-Fi extender <1>{{networkName}}</1>, causing poor performance and connectivity issues for interactive applications like VoIP and online gaming.",
+            "description": "Internet disconnections have been detected at your Wi-Fi extender <1>{{networkName}}</1>, causing intermittent connectivity issues.",
             "category": "AP_HEALTH"
         },
         "recommendations": [
@@ -174,6 +174,37 @@
                 "id": "4",
                 "key_text": "Improve Ventilation: ",
                 "text": "Ensure your extender is in a well-ventilated area to prevent overheating, which can affect performance."
+            }
+        ]
+    },
+
+    "EXT_BB_LAT_1": {
+        "title_head": "Extender Backhaul <br />Latency Alert",
+        "summary": {
+            "title": "What Happened?",
+            "description": "High latency has been detected on your Wi-Fi extender <1>{{networkName}}</1>, causing poor performance and connectivity issues for interactive applications like VoIP and online gaming.",
+            "category": "AP_HEALTH"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Check Extender Placement: ",
+                "text": "Ensure your extender is placed in a central location, within the range of the main router but not too far away. Avoid placing it near electronic devices that can cause interference."
+            },
+            {
+                "id": "2",
+                "key_text": "Use Wired Connection: ",
+                "text": "If possible, connect the extender to the main router using an Ethernet cable to reduce latency  and improve stability."
+            },
+            {
+                "id": "3",
+                "key_text": "Reduce Interference: ",
+                "text": "Keep electronic devices that emit radio frequencies away from your extender. This includes devices like Bluetooth devices, walkie-talkies, and radio frequency-based devices."
+            },
+            {
+                "id": "4",
+                "key_text": "Restart your extender: ",
+                "text": "Unplug your extender, wait for 5 seconds, and plug it back in."
             }
         ]
     },

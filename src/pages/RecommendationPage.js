@@ -7,10 +7,12 @@ import Header from "../components/Header/Header";
 import AP_BB_DOWN_2 from "../components/Content/AP_BB_DOWN_2";
 import AP_BB_LAT_1 from "../components/Content/AP_BB_LAT_1";
 import AP_CPU_1 from "../components/Content/AP_CPU_1";
-import INTF_SET_3 from "../components/Content/INTF_SET_3";
-import INTF_NOI_1 from "../components/Content/INTF_NOI_1";
 import AP_MEM_1 from "../components/Content/AP_MEM_1";
 import AP_PWR_1 from "../components/Content/AP_PWR_1";
+import EXT_BB_DOWN_1 from "../components/Content/EXT_BB_DOWN_1";
+import EXT_BB_LAT_1 from "../components/Content/EXT_BB_LAT_1";
+import INTF_SET_3 from "../components/Content/INTF_SET_3";
+import INTF_NOI_1 from "../components/Content/INTF_NOI_1";
 
 import '../assets/styles/themeStyles.css';
 import '../assets/styles/componentStyles.css';
@@ -55,6 +57,12 @@ function RecommendationPage() {
                 return <AP_CPU_1 />;
             case "AP_CPU_2":
                 return <AP_CPU_1 />; // AP_CPU_2 same as AP_CPU_1
+            case "EXT_BB_DOWN_1":
+                return <EXT_BB_DOWN_1 networkName={querySSIDName}/>;
+            case "EXT_BB_DOWN_4":
+                return <EXT_BB_DOWN_1 networkName={querySSIDName}/>; // EXT_BB_DOWN_4 same as EXT_BB_DOWN_1
+            case "EXT_BB_LAT_1":
+                return <EXT_BB_LAT_1 networkName={querySSIDName}/>;
             case "INTF_SET_3":
                 return <INTF_SET_3 networkName={querySSIDName}/>;
             case "INTF_NOI_1":

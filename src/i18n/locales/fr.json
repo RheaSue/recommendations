@@ -147,6 +147,68 @@
         ]
     },
 
+    "EXT_BB_DOWN_1": {
+        "title_head": "Déconnexions Internet <br />sur l'extendeur",
+        "summary": {
+            "title": "Qu'est-ce qui est arrivé ?",
+            "description": "Des déconnexions Internet ont été détectées sur votre extendeur Wi-Fi <1>{{networkName}}</1>, ce qui cause des problèmes de connectivité intermittents.",
+            "category": "WIFI_EXTENDER_PERFORMANCE"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Vérifier la position de l'extendeur : ",
+                "text": "Assurez-vous que votre extendeur est placé dans un emplacement central, dans la portée du routeur principal mais pas trop loin. Évitez de le placer près d'appareils électroniques qui peuvent causer des interférences."
+            },
+            {
+                "id": "2",
+                "key_text": "Utiliser une connexion filaire : ",
+                "text": "Si possible, connectez l'extendeur au routeur principal à l'aide d'un câble Ethernet pour réduire la latence."
+            },
+            {
+                "id": "3",
+                "key_text": "Réduire les interférences : ",
+                "text": "Éloignez des appareils qui émettent des fréquences radio de votre extendeur. Cela inclut des appareils comme les dispositifs Bluetooth, les transceivers radio et les dispositifs basés sur les fréquences radio."
+            },
+            {
+                "id": "4",
+                "key_text": "Améliorer la ventilation : ",
+                "text": "Assurez-vous que votre extendeur est dans une zone bien ventilée pour éviter la surchauffe, qui peut affecter les performances."
+            }
+        ]
+    },
+
+    "EXT_BB_LAT_1": {
+        "title_head": "Alerte de latence <br />de la backhaul de l'extendeur",
+        "summary": {
+            "title": "Qu'est-ce qui est arrivé ?",
+            "description": "Une latence élevée a été détectée sur votre extendeur Wi-Fi <1>{{networkName}}</1>, ce qui entraîne de mauvaises performances et des problèmes de connectivité pour des applications interactives comme le VoIP et les jeux en ligne.",
+            "category": "WIFI_EXTENDER_PERFORMANCE"
+        },
+        "recommendations": [
+            {
+                "id": "1",
+                "key_text": "Vérifier la position de l'extendeur : ",
+                "text": "Assurez-vous que votre extendeur est placé dans un emplacement central, dans la portée du routeur principal mais pas trop loin. Évitez de le placer près d'appareils électroniques qui peuvent causer des interférences."
+            },
+            {
+                "id": "2",
+                "key_text": "Utiliser une connexion filaire : ",
+                "text": "Si possible, connectez l'extendeur au routeur principal à l'aide d'un câble Ethernet pour réduire la latence et améliorer la stabilité."
+            },
+            {
+                "id": "3",
+                "key_text": "Réduire les interférences : ",
+                "text": "Éloignez des appareils qui émettent des fréquences radio de votre extendeur. Cela inclut des appareils comme les dispositifs Bluetooth, les transceivers radio et les dispositifs basés sur les fréquences radio."
+            },
+            {
+                "id": "4",
+                "key_text": "Redémarrer votre extendeur : ",
+                "text": "Débranchez votre extendeur, attendez 5 secondes et reconnectez-le."
+            }
+        ]
+    },
+
     "INTF_NOI_1": {
         "title_head": "Alerte de forte <br />interférence",
         "summary": {
