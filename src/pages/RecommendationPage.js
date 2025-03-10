@@ -53,10 +53,14 @@ function RecommendationPage() {
                 return <AP_BB_LAT_1 />;
             case "AP_CPU_1":
                 return <AP_CPU_1 />;
+            case "AP_CPU_2":
+                return <AP_CPU_1 />; // AP_CPU_2 same as AP_CPU_1
             case "INTF_SET_3":
                 return <INTF_SET_3 networkName={querySSIDName}/>;
             case "INTF_NOI_1":
                 return <INTF_NOI_1 networkName={querySSIDName}/>;
+            case "INTF_INT_1":
+                return <INTF_NOI_1 networkName={querySSIDName}/>; // INTF_INT_1 same as INTF_NOI_1
             case "AP_MEM_1":
                 return <AP_MEM_1 />;
             case "AP_PWR_1":
