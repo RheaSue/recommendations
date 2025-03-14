@@ -23,7 +23,7 @@ import '../assets/styles/global.css';
 function RecommendationPage() {
 
     const { pathParams } = useParams(); // get the path from the URL
-    const [querySSIDName, setQuerySSIDName] = useState('\'\''); // get the query ssid name from the URL
+    const [queryNetworkName, setQueryNetworkName] = useState('\'\''); // get the query network name from the URL
     const [queryLanguage, setQueryLanguage] = useState('en'); // get the query language from the URL ('fr' / 'en')
     const [querySeverity, setQuerySeverity] = useState(null); // get the query severity from the URL ('action' / 'warning' / 'info')
 
@@ -31,8 +31,8 @@ function RecommendationPage() {
 
     useEffect(() => {
         const searchParams = new URLSearchParams(location.search);
-        const ssidNameParam = searchParams.get("ssidName");
-        setQuerySSIDName(ssidNameParam);
+        const networkNameParam = searchParams.get("network");
+        setQueryNetworkName(networkNameParam);
         const languageParam = searchParams.get("language");
         setQueryLanguage(languageParam);
         const severityParam = searchParams.get("severity");
@@ -58,17 +58,17 @@ function RecommendationPage() {
             case "AP_CPU_2":
                 return <AP_CPU_1 />; // AP_CPU_2 same as AP_CPU_1
             case "EXT_BB_DOWN_1":
-                return <EXT_BB_DOWN_1 networkName={querySSIDName}/>;
+                return <EXT_BB_DOWN_1 networkName={queryNetworkName}/>;
             case "EXT_BB_DOWN_4":
-                return <EXT_BB_DOWN_1 networkName={querySSIDName}/>; // EXT_BB_DOWN_4 same as EXT_BB_DOWN_1
+                return <EXT_BB_DOWN_1 networkName={queryNetworkName}/>; // EXT_BB_DOWN_4 same as EXT_BB_DOWN_1
             case "EXT_BB_LAT_1":
-                return <EXT_BB_LAT_1 networkName={querySSIDName}/>;
+                return <EXT_BB_LAT_1 networkName={queryNetworkName}/>;
             case "INTF_SET_3":
-                return <INTF_SET_3 networkName={querySSIDName}/>;
+                return <INTF_SET_3 networkName={queryNetworkName}/>;
             case "INTF_NOI_1":
-                return <INTF_NOI_1 networkName={querySSIDName}/>;
+                return <INTF_NOI_1 networkName={queryNetworkName}/>;
             case "INTF_INT_1":
-                return <INTF_NOI_1 networkName={querySSIDName}/>; // INTF_INT_1 same as INTF_NOI_1
+                return <INTF_NOI_1 networkName={queryNetworkName}/>; // INTF_INT_1 same as INTF_NOI_1
             case "AP_MEM_1":
                 return <AP_MEM_1 />;
             case "AP_PWR_1":
